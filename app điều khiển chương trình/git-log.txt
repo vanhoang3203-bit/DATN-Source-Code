@@ -1,0 +1,103 @@
+commit 984d07c9c3f71f0a65d44064c2e4cda7c1878a0f
+Author: Nick Craig-Wood <nick@craig-wood.com>
+Date:   Wed Apr 8 12:19:50 2026 +0100
+
+    Version v1.73.4
+
+commit 06c054bbc8ad13fa7eca7180c15eeede31658b3e
+Author: Nick Craig-Wood <nick@craig-wood.com>
+Date:   Wed Apr 8 09:50:20 2026 +0100
+
+    Update to go 1.25.9 to fix multiple CVEs
+    
+    - CVE-2026-32282: os: Root.Chmod can follow symlinks out of the root on Linux
+    - CVE-2026-32289: html/template: JS template literal context incorrectly tracked
+    - CVE-2026-33810: crypto/x509: excluded DNS constraints not properly applied to wildcard domains
+    - CVE-2026-27144: cmd/compile: no-op interface conversion bypasses overlap checking
+    - CVE-2026-27143: cmd/compile: possible memory corruption after bound check elimination
+    - CVE-2026-32288: archive/tar: unbounded allocation when parsing old format GNU sparse map
+    - CVE-2026-32283: crypto/tls: multiple key update handshake messages can cause connection to deadlock
+    - CVE-2026-27140: cmd/go: trust layer bypass when using cgo and SWIG
+    - CVE-2026-32280: crypto/x509: unexpected work during chain building
+    - CVE-2026-32281: crypto/x509: inefficient policy validation
+    
+    Fixes #9302
+
+commit 6987bc1318347b21657ab0d41cb06c01d010a60b
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Wed Apr 8 09:03:49 2026 +0100
+
+    build: fix Denial of Service due to Panic in AWS SDK for Go v2 SDK EventStream Decoder
+    
+    Bumps [github.com/aws/aws-sdk-go-v2/service/s3](https://github.com/aws/aws-sdk-go-v2) from v1.90.0 to 1.97.3.
+    - [Release notes](https://github.com/aws/aws-sdk-go-v2/releases)
+    - [Commits](https://github.com/aws/aws-sdk-go-v2/compare/service/s3/v1.90.0...service/s3/v1.97.3)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/aws/aws-sdk-go-v2/service/s3
+      dependency-version: 1.97.3
+      dependency-type: direct:production
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+commit c9ea98e75295dfeb5166ef06314c14f13a54ea6c
+Author: albertony <12441419+albertony@users.noreply.github.com>
+Date:   Fri Apr 3 14:25:07 2026 +0200
+
+    docs: fix markdown issues in mount docs
+
+commit 4c5deb435cf96ad38aea54d29438e17da0b45784
+Author: Clément Notin <clement.notin@gmail.com>
+Date:   Fri Apr 3 14:32:24 2026 +0200
+
+    docs: fix header level for metadata option
+
+commit d757bd664565ba8469db4c89cde33318cdbcb73d
+Author: Ross Smith II <ross@smithii.com>
+Date:   Thu Apr 2 07:29:15 2026 -0700
+
+    fix(docs): Fix link to not be language specific
+
+commit 6b44b65fba16c36c3d8cafa0d94b51380d454c7d
+Author: Enduriel <endur1el@protonmail.com>
+Date:   Mon Mar 30 12:09:36 2026 +0200
+
+    filen: update SDK version
+    
+    - increase timeout for http requests
+    - only use a single URL per request type
+
+commit 28805943b00a77ea263c964d093f1b3636944862
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Mon Mar 30 16:29:51 2026 +0000
+
+    build(deps): bump golang.org/x/image from 0.36.0 to 0.38.0
+    
+    Bumps [golang.org/x/image](https://github.com/golang/image) from 0.36.0 to 0.38.0.
+    - [Commits](https://github.com/golang/image/compare/v0.36.0...v0.38.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: golang.org/x/image
+      dependency-version: 0.38.0
+      dependency-type: indirect
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+commit 2ed57c301bb4696e2f12242f14ea7e88cbdb67be
+Author: kapitainsky <dariuszb@me.com>
+Date:   Sat Mar 28 13:29:53 2026 +0100
+
+    docs: note macOS 10.15 (Catalina) support with version v1.70.3
+    
+    due to min golang requirements macOS Catalina (10.15) can not run newer rclone versions
+
+commit 3e8d4f21181ec1df1a3ed767fc4d0135db6111f9
+Author: Nick Craig-Wood <nick@craig-wood.com>
+Date:   Mon Mar 23 23:03:10 2026 +0000
+
+    Start v1.73.4-DEV development
